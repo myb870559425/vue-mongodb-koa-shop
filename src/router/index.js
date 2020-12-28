@@ -51,7 +51,7 @@ const routes = [
     name: 'Shopingcar',
     components: {
       default: Shopingcar,
-      'footer-bar': Footer,
+      // 'footer-bar': Footer,
       'header-bar': Header,
     },
     meta: {

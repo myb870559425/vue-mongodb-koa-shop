@@ -32,6 +32,7 @@
           >
             <div
               class="product-wraper-item"
+              @click="shopingCar(item)"
               v-for="(item, index) in productList"
               :key="index"
             >
@@ -90,8 +91,6 @@ export default {
         },
       })
         .then((res) => {
-          console.log(333333)
-          console.log(this.productList.length)
           setTimeout(() => {
             if (!res.data.length !== 0) {
               this.productList = this.productList.concat(res.data)
@@ -120,8 +119,14 @@ export default {
           console.log(err)
         })
     },
+    shopingCar(_item) {
+      const { productImg, productName, productPrice } = _item
+      let imgEncod = encodeURIComponent(productImg)
+      this.$router.push(
+        `./Shopingcar?productimg=${imgEncod}&productname=${productName}&productprice=${productPrice}`
+      )
+    },
     onLoad() {
-      console.log(22222)
       this.productListsearch()
     },
     onRefresh() {

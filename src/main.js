@@ -22,6 +22,9 @@ import {
   Cell,
   CellGroup,
   PullRefresh,
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton,
 } from 'vant'
 import '@/assets/styles/reset.css'
 Vue.config.productionTip = false
@@ -43,6 +46,9 @@ Vue.use(NavBar)
   .use(Cell)
   .use(CellGroup)
   .use(PullRefresh)
+  .use(GoodsAction)
+  .use(GoodsActionButton)
+  .use(GoodsActionIcon)
 new Vue({
   router,
   store,

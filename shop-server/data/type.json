@@ -1,0 +1,34 @@
+[
+  {
+    "typeName": "商品1",
+    "typeId": "1"
+  },
+  {
+    "typeName": "商品2",
+    "typeId": "2"
+  },
+  {
+    "typeName": "商品3",
+    "typeId": "3"
+  },
+  {
+    "typeName": "商品4",
+    "typeId": "4"
+  },
+  {
+    "typeName": "商品5",
+    "typeId": "5"
+  },
+  {
+    "typeName": "商品6",
+    "typeId": "6"
+  },
+  {
+    "typeName": "商品7",
+    "typeId": "7"
+  },
+  {
+    "typeName": "商品8",
+    "typeId": "8"
+  }
+]
