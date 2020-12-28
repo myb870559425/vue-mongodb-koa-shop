@@ -1,28 +1,25 @@
 <template>
   <div id="app">
+    <router-view name="header-bar" />
     <router-view />
+    <router-view name="footer-bar" />
   </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+!(function(n) {
+  var e = n.document,
+    t = e.documentElement,
+    i = 320,
+    d = i / 100,
+    o = 'orientationchange' in n ? 'orientationchange' : 'resize',
+    a = function() {
+      var n = t.clientWidth || 320
+      n > 720 && (n = 720)
+      t.style.fontSize = n / d + 'px'
     }
-  }
-}
-</style>
+  e.addEventListener &&
+    (n.addEventListener(o, a, !1),
+    e.addEventListener('DOMContentLoaded', a, !1))
+})(window)
+</script>
+<style lang="scss"></style>
